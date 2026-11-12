@@ -1,0 +1,120 @@
+{
+  "timestamp_utc": "2026-10-26T16:30:26+00:00",
+  "seed": 42,
+  "xgb_params": {
+    "n_estimators": 200,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "random_state": 42,
+    "eval_metric": "logloss"
+  },
+  "features": [
+    "nevents",
+    "ndays_act",
+    "ncontent",
+    "nforum_posts"
+  ],
+  "target": "Engagement_Level",
+  "strategy": "random",
+  "variant": "target as generator column, balanced by conditional sampling",
+  "evaluated_on": "real test set (final evaluation only; no tuning)",
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.9.1",
+    "pandas": "2.3.3"
+  },
+  "experiments": {
+    "ctgan_random_target_balanced": {
+      "weighted": {
+        "precision": 0.8605923882856605,
+        "recall": 0.7824864054003375,
+        "f1": 0.8042993181824579
+      },
+      "per_class": {
+        "0": {
+          "precision": 0.950974930362117,
+          "recall": 0.7762619372442019,
+          "f1-score": 0.8547821732598898,
+          "support": 4398.0
+        },
+        "1": {
+          "precision": 0.4354561101549053,
+          "recall": 0.8117647058823529,
+          "f1-score": 0.566840926064227,
+          "support": 935.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          3414,
+          984
+        ],
+        [
+          176,
+          759
+        ]
+      ],
+      "test_class_counts": {
+        "0": 4398,
+        "1": 935
+      },
+      "train_rows": 21328,
+      "train_class_share": {
+        "0": 0.5,
+        "1": 0.5
+      },
+      "train_feature_nan_pct": {
+        "nevents": 17.12,
+        "ndays_act": 10.48,
+        "ncontent": 0.0,
+        "nforum_posts": 68.48
+      }
+    },
+    "tvae_random_target_balanced": {
+      "weighted": {
+        "precision": 0.8874181692794716,
+        "recall": 0.8108006750421901,
+        "f1": 0.8299686725243398
+      },
+      "per_class": {
+        "0": {
+          "precision": 0.9742513294150573,
+          "recall": 0.7914961346066394,
+          "f1-score": 0.873416133483879,
+          "support": 4398.0
+        },
+        "1": {
+          "precision": 0.47897727272727275,
+          "recall": 0.9016042780748663,
+          "f1-score": 0.6256029684601113,
+          "support": 935.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          3481,
+          917
+        ],
+        [
+          92,
+          843
+        ]
+      ],
+      "test_class_counts": {
+        "0": 4398,
+        "1": 935
+      },
+      "train_rows": 21328,
+      "train_class_share": {
+        "0": 0.5,
+        "1": 0.5
+      },
+      "train_feature_nan_pct": {
+        "nevents": 17.12,
+        "ndays_act": 10.48,
+        "ncontent": 0.0,
+        "nforum_posts": 68.48
+      }
+    }
+  }
+}

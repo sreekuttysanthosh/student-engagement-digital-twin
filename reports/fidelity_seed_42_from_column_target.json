@@ -1,0 +1,67 @@
+{
+  "seed": 42,
+  "strategy": "from_column",
+  "compared_against": "real train with genuine NaNs",
+  "sdv_version": "2.0.0",
+  "sdmetrics_version": "0.32.0",
+  "generators": {
+    "ctgan": {
+      "column_shapes": 0.943338496740739,
+      "pair_trends": 0.95873711340795,
+      "overall_quality": 0.9510378050743444,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9901193285106425,
+        "nevents|ncontent": 0.9386855825301341,
+        "nevents|nforum_posts": 0.9501157502727895,
+        "ndays_act|ncontent": 0.9758419188322089,
+        "ndays_act|nforum_posts": 0.9967516344722129,
+        "ncontent|nforum_posts": 0.9009084658297121
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9128844711177795,
+        "ndays_act": 0.9610840210052514,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9728057014253563
+      },
+      "missing_rate_difference_points": {
+        "nevents": 8.71,
+        "ndays_act": -3.89,
+        "ncontent": 0.0,
+        "nforum_posts": 2.72
+      },
+      "class_share_synthetic": {
+        "0": 0.8352,
+        "1": 0.1648
+      }
+    },
+    "tvae": {
+      "column_shapes": 0.9297015659392656,
+      "pair_trends": 0.9567237683323874,
+      "overall_quality": 0.9432126671358265,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.935970077993681,
+        "nevents|ncontent": 0.8964548521376359,
+        "nevents|nforum_posts": 0.9595990637281199,
+        "ndays_act|ncontent": 0.9964655686069825,
+        "ndays_act|nforum_posts": 0.9984188857690384,
+        "ncontent|nforum_posts": 0.9534341617588667
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9800731432858214,
+        "ndays_act": 0.8983964741185296,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9651162790697675
+      },
+      "missing_rate_difference_points": {
+        "nevents": -1.99,
+        "ndays_act": -10.16,
+        "ncontent": 0.0,
+        "nforum_posts": -3.49
+      },
+      "class_share_synthetic": {
+        "0": 0.8296,
+        "1": 0.1704
+      }
+    }
+  }
+}

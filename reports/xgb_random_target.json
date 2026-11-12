@@ -1,0 +1,166 @@
+{
+  "timestamp_utc": "2026-10-26T16:30:18+00:00",
+  "seed": 42,
+  "xgb_params": {
+    "n_estimators": 200,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "random_state": 42,
+    "eval_metric": "logloss"
+  },
+  "features": [
+    "nevents",
+    "ndays_act",
+    "ncontent",
+    "nforum_posts"
+  ],
+  "target": "Engagement_Level",
+  "strategy": "random",
+  "variant": "target as generator column (unbalanced)",
+  "evaluated_on": "real test set (final evaluation only; no tuning)",
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.9.1",
+    "pandas": "2.3.3"
+  },
+  "experiments": {
+    "real_train_reference": {
+      "weighted": {
+        "precision": 0.9054906227812738,
+        "recall": 0.9086817926120383,
+        "f1": 0.9065487566142643
+      },
+      "per_class": {
+        "0": {
+          "precision": 0.9344590091090869,
+          "recall": 0.956343792633015,
+          "f1-score": 0.945274749971907,
+          "support": 4398.0
+        },
+        "1": {
+          "precision": 0.7692307692307693,
+          "recall": 0.6844919786096256,
+          "f1-score": 0.7243916242218449,
+          "support": 935.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4206,
+          192
+        ],
+        [
+          295,
+          640
+        ]
+      ],
+      "test_class_counts": {
+        "0": 4398,
+        "1": 935
+      },
+      "train_rows": 21328,
+      "train_class_share": {
+        "0": 0.8246,
+        "1": 0.1754
+      },
+      "train_feature_nan_pct": {
+        "nevents": 17.08,
+        "ndays_act": 10.53,
+        "ncontent": 0.0,
+        "nforum_posts": 68.11
+      }
+    },
+    "ctgan_random_target": {
+      "weighted": {
+        "precision": 0.8665152499631857,
+        "recall": 0.8766172885805363,
+        "f1": 0.866944172135216
+      },
+      "per_class": {
+        "0": {
+          "precision": 0.8982112436115843,
+          "recall": 0.9590723055934516,
+          "f1-score": 0.9276446008357159,
+          "support": 4398.0
+        },
+        "1": {
+          "precision": 0.717425431711146,
+          "recall": 0.48877005347593583,
+          "f1-score": 0.5814249363867684,
+          "support": 935.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4218,
+          180
+        ],
+        [
+          478,
+          457
+        ]
+      ],
+      "test_class_counts": {
+        "0": 4398,
+        "1": 935
+      },
+      "train_rows": 21328,
+      "train_class_share": {
+        "0": 0.824,
+        "1": 0.176
+      },
+      "train_feature_nan_pct": {
+        "nevents": 17.12,
+        "ndays_act": 10.48,
+        "ncontent": 0.0,
+        "nforum_posts": 68.48
+      }
+    },
+    "tvae_random_target": {
+      "weighted": {
+        "precision": 0.8944342768525215,
+        "recall": 0.8994937183573973,
+        "f1": 0.8955826304888905
+      },
+      "per_class": {
+        "0": {
+          "precision": 0.9232792634809294,
+          "recall": 0.9577080491132333,
+          "f1-score": 0.9401785714285714,
+          "support": 4398.0
+        },
+        "1": {
+          "precision": 0.7587548638132295,
+          "recall": 0.6256684491978609,
+          "f1-score": 0.6858147713950762,
+          "support": 935.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4212,
+          186
+        ],
+        [
+          350,
+          585
+        ]
+      ],
+      "test_class_counts": {
+        "0": 4398,
+        "1": 935
+      },
+      "train_rows": 21328,
+      "train_class_share": {
+        "0": 0.8435,
+        "1": 0.1565
+      },
+      "train_feature_nan_pct": {
+        "nevents": 17.12,
+        "ndays_act": 10.48,
+        "ncontent": 0.0,
+        "nforum_posts": 68.48
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "timestamp_utc": "2026-11-08T07:01:27.918709+00:00",
+  "status": "evaluation_completed",
+  "generator": "RealTabFormer",
+  "strategy": "random",
+  "seed": 42,
+  "generation_report": "artifacts/realtabformer/full/full_random_seed_42_report.json",
+  "synthetic_rows": 21328,
+  "synthetic_class_distribution": {
+    "0": 0.8418042010502625,
+    "1": 0.15819579894973743
+  },
+  "fidelity_vs_real_train": {
+    "column_shapes": 0.9200882745145379,
+    "pair_trends": 0.9696340890519425,
+    "overall_quality": 0.9448611817832402,
+    "pair_trends_per_pair": {
+      "nevents|ndays_act": 0.9835693911495145,
+      "nevents|ncontent": 0.9919551247948137,
+      "nevents|nforum_posts": 0.9395445728365563,
+      "ndays_act|ncontent": 0.995253580678664,
+      "ndays_act|nforum_posts": 0.9649560406224578,
+      "ncontent|nforum_posts": 0.9425258242296475
+    },
+    "missing_value_similarity": {
+      "nevents": 0.9995780195048762,
+      "ndays_act": 0.9995311327831958,
+      "ncontent": 1.0,
+      "nforum_posts": 0.9962490622655663
+    },
+    "real_missing_values": {
+      "nevents": 3643,
+      "ndays_act": 2246,
+      "ncontent": 0,
+      "nforum_posts": 14526
+    },
+    "synthetic_missing_values": {
+      "nevents": 3652,
+      "ndays_act": 2236,
+      "ncontent": 0,
+      "nforum_posts": 14606
+    }
+  },
+  "classification_on_real_test": {
+    "weighted": {
+      "precision": 0.9024978835200795,
+      "recall": 0.9060566285392837,
+      "f1": 0.9036314630730395
+    },
+    "per_class": {
+      "0": {
+        "precision": 0.9319441365550876,
+        "recall": 0.9558890404729422,
+        "f1-score": 0.9437647322931867,
+        "support": 4398.0
+      },
+      "1": {
+        "precision": 0.7639902676399026,
+        "recall": 0.6716577540106952,
+        "f1-score": 0.7148548662492885,
+        "support": 935.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4204,
+        194
+      ],
+      [
+        307,
+        628
+      ]
+    ]
+  },
+  "shap_on_real_test": {
+    "mean_abs_shap": {
+      "nevents": 1.0166000127792358,
+      "ndays_act": 0.30480000376701355,
+      "ncontent": 2.71560001373291,
+      "nforum_posts": 0.1890999972820282
+    },
+    "max_additivity_gap": 8.58306884765625e-06
+  },
+  "classification_training": "XGBoost trained on this synthetic dataset only; evaluated on the fixed real held-out test set with original missing values.",
+  "outputs": {
+    "synthetic_csv": "artifacts/realtabformer/full/full_random_seed_42_restored.csv",
+    "classifier_model": "artifacts/realtabformer/full/full_random_seed_42/xgb_realtabformer_full.joblib",
+    "shap_importance_figure": "reports/figures/shap_importance_realtabformer_random_seed_42.png",
+    "shap_summary_figure": "reports/figures/shap_summary_realtabformer_random_seed_42.png",
+    "shap_global_report": "reports/shap_global_importance.json"
+  }
+}

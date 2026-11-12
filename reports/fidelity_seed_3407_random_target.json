@@ -1,0 +1,67 @@
+{
+  "seed": 3407,
+  "strategy": "random",
+  "compared_against": "real train with genuine NaNs",
+  "sdv_version": "2.0.0",
+  "sdmetrics_version": "0.32.0",
+  "generators": {
+    "ctgan": {
+      "column_shapes": 0.9284229605875314,
+      "pair_trends": 0.9534814388870538,
+      "overall_quality": 0.9409521997372926,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9930885158939866,
+        "nevents|ncontent": 0.9471772181384205,
+        "nevents|nforum_posts": 0.9059804339587555,
+        "ndays_act|ncontent": 0.9602307544166583,
+        "ndays_act|nforum_posts": 0.982908700054415,
+        "ncontent|nforum_posts": 0.9315030108600876
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9995780195048762,
+        "ndays_act": 0.9995311327831958,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9962490622655663
+      },
+      "missing_rate_difference_points": {
+        "nevents": 0.04,
+        "ndays_act": -0.05,
+        "ncontent": 0.0,
+        "nforum_posts": 0.38
+      },
+      "class_share_synthetic": {
+        "0": 0.8239,
+        "1": 0.1761
+      }
+    },
+    "tvae": {
+      "column_shapes": 0.9011555779604221,
+      "pair_trends": 0.9250687361794471,
+      "overall_quality": 0.9131121570699345,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9627448806036366,
+        "nevents|ncontent": 0.8900943916100592,
+        "nevents|nforum_posts": 0.7877573409565742,
+        "ndays_act|ncontent": 0.9819005913495131,
+        "ndays_act|nforum_posts": 0.9945675265698012,
+        "ncontent|nforum_posts": 0.9333476859870973
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9995780195048762,
+        "ndays_act": 0.9995311327831958,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9962490622655663
+      },
+      "missing_rate_difference_points": {
+        "nevents": 0.04,
+        "ndays_act": -0.05,
+        "ncontent": 0.0,
+        "nforum_posts": 0.38
+      },
+      "class_share_synthetic": {
+        "0": 0.843,
+        "1": 0.157
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-25T16:36:49+00:00",
+  "versions": {
+    "sdv": "2.0.0",
+    "torch": "2.14.1+cpu",
+    "pandas": "2.3.3"
+  },
+  "seed": 42,
+  "epochs": 300,
+  "force_retrain": false,
+  "generator_kwargs": {
+    "ctgan": {
+      "verbose": true,
+      "log_frequency": false
+    },
+    "tvae": {}
+  },
+  "training_minutes_this_run": {
+    "ctgan_random": null,
+    "tvae_random": null,
+    "ctgan_random_target": null,
+    "tvae_random_target": null,
+    "ctgan_from_column_target": 8.97506976922353,
+    "tvae_from_column_target": 3.6474066217740377
+  },
+  "restored_outputs": {
+    "ctgan_from_column_target_restored.csv": 21328,
+    "ctgan_random_restored.csv": 21328,
+    "ctgan_random_target_balanced_restored.csv": 21328,
+    "ctgan_random_target_restored.csv": 21328,
+    "tvae_from_column_target_restored.csv": 21328,
+    "tvae_random_restored.csv": 21328,
+    "tvae_random_target_balanced_restored.csv": 21328,
+    "tvae_random_target_restored.csv": 21328
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "seed": 42,
+  "sdv": "2.0.0",
+  "sdmetrics": "0.32.0",
+  "strategy": "random",
+  "variant": "no-target baseline",
+  "compared_against": "real train with genuine NaNs",
+  "generators": {
+    "ctgan": {
+      "column_shapes": 0.8942224451174492,
+      "pair_trends": 0.9393698381421434,
+      "overall_quality": 0.9167961416297963,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.961093623000278,
+        "nevents|ncontent": 0.9485289568809954,
+        "nevents|nforum_posts": 0.8843891876431809,
+        "ndays_act|ncontent": 0.9572818367453197,
+        "ndays_act|nforum_posts": 0.9791058473245016,
+        "ncontent|nforum_posts": 0.9058195772585848
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9995780195048762,
+        "ndays_act": 0.9995311327831958,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9962490622655663
+      },
+      "missing_rate_difference_points": {
+        "nevents": 0.04,
+        "ndays_act": -0.05,
+        "ncontent": 0.0,
+        "nforum_posts": 0.38
+      }
+    },
+    "tvae": {
+      "column_shapes": 0.8642725521311371,
+      "pair_trends": 0.9337605540023253,
+      "overall_quality": 0.8990165530667311,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9637627676648806,
+        "nevents|ncontent": 0.8934268884838427,
+        "nevents|nforum_posts": 0.8990021064039682,
+        "ndays_act|ncontent": 0.9549739731218846,
+        "ndays_act|nforum_posts": 0.8979196727342327,
+        "ncontent|nforum_posts": 0.9934779156051421
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9995780195048762,
+        "ndays_act": 0.9995311327831958,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9962490622655663
+      },
+      "missing_rate_difference_points": {
+        "nevents": 0.04,
+        "ndays_act": -0.05,
+        "ncontent": 0.0,
+        "nforum_posts": 0.38
+      }
+    }
+  }
+}

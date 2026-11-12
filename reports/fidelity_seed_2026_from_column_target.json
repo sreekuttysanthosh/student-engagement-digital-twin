@@ -1,0 +1,67 @@
+{
+  "seed": 2026,
+  "strategy": "from_column",
+  "compared_against": "real train with genuine NaNs",
+  "sdv_version": "2.0.0",
+  "sdmetrics_version": "0.32.0",
+  "generators": {
+    "ctgan": {
+      "column_shapes": 0.9347559980080454,
+      "pair_trends": 0.9488695193898611,
+      "overall_quality": 0.9418127586989533,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9684588682778958,
+        "nevents|ncontent": 0.9050524485145611,
+        "nevents|nforum_posts": 0.9364255085509159,
+        "ndays_act|ncontent": 0.9917166160002431,
+        "ndays_act|nforum_posts": 0.9753026696630087,
+        "ncontent|nforum_posts": 0.9162610053325416
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9526444111027756,
+        "ndays_act": 0.9671792948237059,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9352025506376593
+      },
+      "missing_rate_difference_points": {
+        "nevents": -4.74,
+        "ndays_act": -3.28,
+        "ncontent": 0.0,
+        "nforum_posts": 6.48
+      },
+      "class_share_synthetic": {
+        "0": 0.8648,
+        "1": 0.1352
+      }
+    },
+    "tvae": {
+      "column_shapes": 0.9134648439557388,
+      "pair_trends": 0.9056100273408582,
+      "overall_quality": 0.9095374356482985,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.8913953019298692,
+        "nevents|ncontent": 0.8844976626316366,
+        "nevents|nforum_posts": 0.8492168270245037,
+        "ndays_act|ncontent": 0.9964983735778119,
+        "ndays_act|nforum_posts": 0.8683580514854206,
+        "ncontent|nforum_posts": 0.9436939473959067
+      },
+      "missing_value_similarity": {
+        "nevents": 0.925450112528132,
+        "ndays_act": 0.8948330832708177,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9759471117779446
+      },
+      "missing_rate_difference_points": {
+        "nevents": -7.45,
+        "ndays_act": -10.52,
+        "ncontent": 0.0,
+        "nforum_posts": -2.41
+      },
+      "class_share_synthetic": {
+        "0": 0.8082,
+        "1": 0.1918
+      }
+    }
+  }
+}

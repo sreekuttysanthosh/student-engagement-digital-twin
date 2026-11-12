@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-11-08T07:00:04.351548+00:00",
+  "status": "generation_completed",
+  "generator": "RealTabFormer",
+  "strategy": "random",
+  "seed": 42,
+  "device": "cpu",
+  "epochs_requested": 10,
+  "max_steps": 6600,
+  "recovered_from_checkpoint": "artifacts/realtabformer/full/full_random_seed_42/checkpoints/checkpoint-6600",
+  "training_rows": 21328,
+  "generated_rows": 21328,
+  "restored_rows": 21328,
+  "columns": [
+    "nevents",
+    "ndays_act",
+    "ncontent",
+    "nforum_posts",
+    "Engagement_Level"
+  ],
+  "missing_values": {
+    "nevents": 3652,
+    "ndays_act": 2236,
+    "ncontent": 0,
+    "nforum_posts": 14606
+  },
+  "class_distribution": {
+    "0": 0.8418042010502625,
+    "1": 0.15819579894973743
+  },
+  "synthetic_csv": "artifacts\\realtabformer\\full\\full_random_seed_42_restored.csv",
+  "generator_model": "artifacts/realtabformer/full/full_random_seed_42/realtabformer/id000017941209565307267072"
+}

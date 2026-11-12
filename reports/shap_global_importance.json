@@ -1,0 +1,58 @@
+{
+  "explained_data": "real test features (SHAP only reads the data; nothing is fitted or tuned)",
+  "units": "mean |SHAP| in log-odds of class 1",
+  "mean_abs_shap": {
+    "real_train_reference": {
+      "nevents": 1.0082000494003296,
+      "ndays_act": 0.23080000281333923,
+      "ncontent": 3.4756999015808105,
+      "nforum_posts": 0.2669999897480011
+    },
+    "ctgan_random_target": {
+      "nevents": 0.7264999747276306,
+      "ndays_act": 0.34290000796318054,
+      "ncontent": 1.7128000259399414,
+      "nforum_posts": 0.24369999766349792
+    },
+    "tvae_random_target": {
+      "nevents": 1.2978999614715576,
+      "ndays_act": 0.19059999287128448,
+      "ncontent": 3.430999994277954,
+      "nforum_posts": 0.3075000047683716
+    },
+    "ctgan_random_target_balanced": {
+      "nevents": 0.710099995136261,
+      "ndays_act": 0.31049999594688416,
+      "ncontent": 1.68340003490448,
+      "nforum_posts": 0.2378000020980835
+    },
+    "tvae_random_target_balanced": {
+      "nevents": 1.15339994430542,
+      "ndays_act": 0.31450000405311584,
+      "ncontent": 3.8585000038146973,
+      "nforum_posts": 0.24570000171661377
+    },
+    "realtabformer_random_seed_42": {
+      "nevents": 1.0166000127792358,
+      "ndays_act": 0.30480000376701355,
+      "ncontent": 2.71560001373291,
+      "nforum_posts": 0.1890999972820282
+    },
+    "realtabformer_from_column_seed_42": {
+      "nevents": 1.1371999979019165,
+      "ndays_act": 0.1793999969959259,
+      "ncontent": 2.5927000045776367,
+      "nforum_posts": 0.30169999599456787
+    }
+  },
+  "local_model": "tvae_random_target",
+  "local_rows": {
+    "true_positive": 453,
+    "false_negative": 3997,
+    "false_positive": 3393
+  },
+  "max_additivity_gap": {
+    "realtabformer_random_seed_42": 8.58306884765625e-06,
+    "realtabformer_from_column_seed_42": 6.67572021484375e-06
+  }
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "Variant":"random_baseline",
+        "Generator":"CTGAN",
+        "Column Shapes":0.8942224451,
+        "Pair Trends":0.9393698381,
+        "Overall Quality":0.9167961416,
+        "Mean Missing Similarity":0.9984527382
+    },
+    {
+        "Variant":"random_baseline",
+        "Generator":"TVAE",
+        "Column Shapes":0.8642725521,
+        "Pair Trends":0.933760554,
+        "Overall Quality":0.8990165531,
+        "Mean Missing Similarity":0.9984527382
+    },
+    {
+        "Variant":"random_target",
+        "Generator":"CTGAN",
+        "Column Shapes":0.9342902705,
+        "Pair Trends":0.9624051853,
+        "Overall Quality":0.9483477279,
+        "Mean Missing Similarity":0.9984527382
+    },
+    {
+        "Variant":"random_target",
+        "Generator":"TVAE",
+        "Column Shapes":0.9140916486,
+        "Pair Trends":0.9272616198,
+        "Overall Quality":0.9206766342,
+        "Mean Missing Similarity":0.9984527382
+    },
+    {
+        "Variant":"from_column_target",
+        "Generator":"CTGAN",
+        "Column Shapes":0.9433384967,
+        "Pair Trends":0.9587371134,
+        "Overall Quality":0.9510378051,
+        "Mean Missing Similarity":0.9489247312
+    },
+    {
+        "Variant":"from_column_target",
+        "Generator":"TVAE",
+        "Column Shapes":0.9297015659,
+        "Pair Trends":0.9567237683,
+        "Overall Quality":0.9432126671,
+        "Mean Missing Similarity":0.9478619655
+    }
+]

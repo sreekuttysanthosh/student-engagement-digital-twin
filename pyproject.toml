@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engagement-twin"
+version = "0.1.0"
+description = "Student engagement digital twin: synthetic data (CTGAN/TVAE), XGBoost, SHAP, Streamlit"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy==2.4.6",
+    "pandas==2.3.3",
+    "scikit-learn==1.9.1",
+    "xgboost==3.2.0",
+    "shap==0.51.0",
+    "joblib==1.6.0",
+    "PyYAML==6.0.3",
+    "matplotlib==3.11.2",
+    "plotly==7.1.0",
+    "sdv==2.0.0",
+    "sdmetrics==0.32.0",
+    "ctgan==0.12.1",
+    "rdt==2.0.0",
+    "copulas==0.14.1",
+    "deepecho==0.8.1",
+    "torch==2.14.1",
+    "realtabformer==0.2.4",
+    "datasets==4.4.1",
+    "transformers==4.57.6",
+    "streamlit==1.66.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]

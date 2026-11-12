@@ -1,0 +1,67 @@
+{
+  "seed": 3407,
+  "strategy": "from_column",
+  "compared_against": "real train with genuine NaNs",
+  "sdv_version": "2.0.0",
+  "sdmetrics_version": "0.32.0",
+  "generators": {
+    "ctgan": {
+      "column_shapes": 0.931942501621538,
+      "pair_trends": 0.9596353578729359,
+      "overall_quality": 0.9457889297472369,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9824827532660978,
+        "nevents|ncontent": 0.9285635489459603,
+        "nevents|nforum_posts": 0.9390845454451783,
+        "ndays_act|ncontent": 0.9980869221926142,
+        "ndays_act|nforum_posts": 0.9967859571202606,
+        "ncontent|nforum_posts": 0.9128084202675044
+      },
+      "missing_value_similarity": {
+        "nevents": 0.97655663915979,
+        "ndays_act": 0.9860746436609152,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9438765941485372
+      },
+      "missing_rate_difference_points": {
+        "nevents": -2.34,
+        "ndays_act": -1.39,
+        "ncontent": 0.0,
+        "nforum_posts": -5.61
+      },
+      "class_share_synthetic": {
+        "0": 0.7905,
+        "1": 0.2095
+      }
+    },
+    "tvae": {
+      "column_shapes": 0.9281979253881831,
+      "pair_trends": 0.9537838416535415,
+      "overall_quality": 0.9409908835208622,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.9869433254935729,
+        "nevents|ncontent": 0.8848324803426522,
+        "nevents|nforum_posts": 0.9387558117496012,
+        "ndays_act|ncontent": 0.9889831705376386,
+        "ndays_act|nforum_posts": 0.9734795505814253,
+        "ncontent|nforum_posts": 0.9497087112163587
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9879969992498124,
+        "ndays_act": 0.9770723930982745,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9990153788447111
+      },
+      "missing_rate_difference_points": {
+        "nevents": -1.2,
+        "ndays_act": -2.29,
+        "ncontent": 0.0,
+        "nforum_posts": 0.1
+      },
+      "class_share_synthetic": {
+        "0": 0.7957,
+        "1": 0.2043
+      }
+    }
+  }
+}

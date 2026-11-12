@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-26T16:30:46+00:00",
+  "evaluated_on": "real test set (5,333 rows); final evaluation only",
+  "xgb_params": {
+    "n_estimators": 200,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "random_state": 42,
+    "eval_metric": "logloss"
+  },
+  "seed": 42,
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.9.1",
+    "pandas": "2.3.3"
+  },
+  "summary": {
+    "real_train_reference": {
+      "w_precision": 0.9055,
+      "w_recall": 0.9087,
+      "w_f1": 0.9065,
+      "class1_precision": 0.7692,
+      "class1_recall": 0.6845,
+      "class1_f1": 0.7244,
+      "false_pos": 192.0,
+      "false_neg": 295.0
+    },
+    "ctgan_random": {
+      "w_precision": 0.8665,
+      "w_recall": 0.8766,
+      "w_f1": 0.8669,
+      "class1_precision": 0.7174,
+      "class1_recall": 0.4888,
+      "class1_f1": 0.5814,
+      "false_pos": 180.0,
+      "false_neg": 478.0
+    },
+    "ctgan_random_balanced": {
+      "w_precision": 0.8606,
+      "w_recall": 0.7825,
+      "w_f1": 0.8043,
+      "class1_precision": 0.4355,
+      "class1_recall": 0.8118,
+      "class1_f1": 0.5668,
+      "false_pos": 984.0,
+      "false_neg": 176.0
+    },
+    "ctgan_from_column": {
+      "w_precision": 0.8936,
+      "w_recall": 0.8987,
+      "w_f1": 0.8948,
+      "class1_precision": 0.7562,
+      "class1_recall": 0.6235,
+      "class1_f1": 0.6835,
+      "false_pos": 188.0,
+      "false_neg": 352.0
+    },
+    "tvae_random": {
+      "w_precision": 0.8944,
+      "w_recall": 0.8995,
+      "w_f1": 0.8956,
+      "class1_precision": 0.7588,
+      "class1_recall": 0.6257,
+      "class1_f1": 0.6858,
+      "false_pos": 186.0,
+      "false_neg": 350.0
+    },
+    "tvae_random_balanced": {
+      "w_precision": 0.8874,
+      "w_recall": 0.8108,
+      "w_f1": 0.83,
+      "class1_precision": 0.479,
+      "class1_recall": 0.9016,
+      "class1_f1": 0.6256,
+      "false_pos": 917.0,
+      "false_neg": 92.0
+    },
+    "tvae_from_column": {
+      "w_precision": 0.8972,
+      "w_recall": 0.8952,
+      "w_f1": 0.8961,
+      "class1_precision": 0.6922,
+      "class1_recall": 0.7241,
+      "class1_f1": 0.7078,
+      "false_pos": 301.0,
+      "false_neg": 258.0
+    }
+  },
+  "models_saved_in": "artifacts/models/"
+}

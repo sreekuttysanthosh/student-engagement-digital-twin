@@ -1,0 +1,67 @@
+{
+  "seed": 123,
+  "strategy": "random",
+  "compared_against": "real train with genuine NaNs",
+  "sdv_version": "2.0.0",
+  "sdmetrics_version": "0.32.0",
+  "generators": {
+    "ctgan": {
+      "column_shapes": 0.919746973878396,
+      "pair_trends": 0.9600330315951623,
+      "overall_quality": 0.9398900027367791,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.974925876212072,
+        "nevents|ncontent": 0.9346293002637793,
+        "nevents|nforum_posts": 0.9170226140899315,
+        "ndays_act|ncontent": 0.9868670514550801,
+        "ndays_act|nforum_posts": 0.9890619367313678,
+        "ncontent|nforum_posts": 0.9576914108187429
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9995780195048762,
+        "ndays_act": 0.9995311327831958,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9962490622655663
+      },
+      "missing_rate_difference_points": {
+        "nevents": 0.04,
+        "ndays_act": -0.05,
+        "ncontent": 0.0,
+        "nforum_posts": 0.38
+      },
+      "class_share_synthetic": {
+        "0": 0.824,
+        "1": 0.176
+      }
+    },
+    "tvae": {
+      "column_shapes": 0.9162777838482435,
+      "pair_trends": 0.9295375654465637,
+      "overall_quality": 0.9229076746474036,
+      "pair_trends_per_pair": {
+        "nevents|ndays_act": 0.947658583647498,
+        "nevents|ncontent": 0.9200168300761409,
+        "nevents|nforum_posts": 0.863423913457121,
+        "ndays_act|ncontent": 0.9798728191800516,
+        "ndays_act|nforum_posts": 0.9590317940710331,
+        "ncontent|nforum_posts": 0.9072214522475379
+      },
+      "missing_value_similarity": {
+        "nevents": 0.9995780195048762,
+        "ndays_act": 0.9995311327831958,
+        "ncontent": 1.0,
+        "nforum_posts": 0.9962490622655663
+      },
+      "missing_rate_difference_points": {
+        "nevents": 0.04,
+        "ndays_act": -0.05,
+        "ncontent": 0.0,
+        "nforum_posts": 0.38
+      },
+      "class_share_synthetic": {
+        "0": 0.8276,
+        "1": 0.1724
+      }
+    }
+  }
+}

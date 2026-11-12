@@ -1,0 +1,254 @@
+{
+  "timestamp_utc": "2026-11-06T16:56:07+00:00",
+  "versions": {
+    "sdv": "2.0.0",
+    "sdmetrics": "0.32.0",
+    "pandas": "2.3.3"
+  },
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407
+  ],
+  "generators": [
+    "ctgan",
+    "tvae"
+  ],
+  "strategies": [
+    "random",
+    "from_column"
+  ],
+  "compared_against": "Real training data with genuine NaNs. Test data was not used.",
+  "standard_deviation": "Sample standard deviation across four generator seeds.",
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "strategy": "from_column",
+      "generator": "ctgan",
+      "column_shapes": 0.943338496740739,
+      "pair_trends": 0.95873711340795,
+      "overall_quality": 0.9510378050743444,
+      "missing_sim_mean": 0.9489247311827956,
+      "class_1_share": 0.1648
+    },
+    {
+      "seed": 123,
+      "strategy": "from_column",
+      "generator": "ctgan",
+      "column_shapes": 0.9423873932881109,
+      "pair_trends": 0.9609767746077115,
+      "overall_quality": 0.9516820839479112,
+      "missing_sim_mean": 0.964991247811953,
+      "class_1_share": 0.163
+    },
+    {
+      "seed": 2026,
+      "strategy": "from_column",
+      "generator": "ctgan",
+      "column_shapes": 0.9347559980080454,
+      "pair_trends": 0.9488695193898611,
+      "overall_quality": 0.9418127586989533,
+      "missing_sim_mean": 0.9516754188547137,
+      "class_1_share": 0.1352
+    },
+    {
+      "seed": 3407,
+      "strategy": "from_column",
+      "generator": "ctgan",
+      "column_shapes": 0.931942501621538,
+      "pair_trends": 0.9596353578729359,
+      "overall_quality": 0.9457889297472369,
+      "missing_sim_mean": 0.9688359589897475,
+      "class_1_share": 0.2095
+    },
+    {
+      "seed": 42,
+      "strategy": "from_column",
+      "generator": "tvae",
+      "column_shapes": 0.9297015659392656,
+      "pair_trends": 0.9567237683323874,
+      "overall_quality": 0.9432126671358265,
+      "missing_sim_mean": 0.9478619654913728,
+      "class_1_share": 0.1704
+    },
+    {
+      "seed": 123,
+      "strategy": "from_column",
+      "generator": "tvae",
+      "column_shapes": 0.9336452589536869,
+      "pair_trends": 0.9307835977850348,
+      "overall_quality": 0.9322144283693609,
+      "missing_sim_mean": 0.9627406851712927,
+      "class_1_share": 0.1598
+    },
+    {
+      "seed": 2026,
+      "strategy": "from_column",
+      "generator": "tvae",
+      "column_shapes": 0.9134648439557388,
+      "pair_trends": 0.9056100273408582,
+      "overall_quality": 0.9095374356482985,
+      "missing_sim_mean": 0.9320767691922981,
+      "class_1_share": 0.1918
+    },
+    {
+      "seed": 3407,
+      "strategy": "from_column",
+      "generator": "tvae",
+      "column_shapes": 0.9281979253881831,
+      "pair_trends": 0.9537838416535415,
+      "overall_quality": 0.9409908835208622,
+      "missing_sim_mean": 0.9880282570642661,
+      "class_1_share": 0.2043
+    },
+    {
+      "seed": 42,
+      "strategy": "random",
+      "generator": "ctgan",
+      "column_shapes": 0.9342902705479832,
+      "pair_trends": 0.9624051852793917,
+      "overall_quality": 0.9483477279136874,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.176
+    },
+    {
+      "seed": 123,
+      "strategy": "random",
+      "generator": "ctgan",
+      "column_shapes": 0.919746973878396,
+      "pair_trends": 0.9600330315951623,
+      "overall_quality": 0.9398900027367791,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.176
+    },
+    {
+      "seed": 2026,
+      "strategy": "random",
+      "generator": "ctgan",
+      "column_shapes": 0.9278554214363381,
+      "pair_trends": 0.9633402659860321,
+      "overall_quality": 0.9455978437111852,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.1758
+    },
+    {
+      "seed": 3407,
+      "strategy": "random",
+      "generator": "ctgan",
+      "column_shapes": 0.9284229605875314,
+      "pair_trends": 0.9534814388870538,
+      "overall_quality": 0.9409521997372926,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.1761
+    },
+    {
+      "seed": 42,
+      "strategy": "random",
+      "generator": "tvae",
+      "column_shapes": 0.9140916485799112,
+      "pair_trends": 0.9272616198036445,
+      "overall_quality": 0.9206766341917778,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.1565
+    },
+    {
+      "seed": 123,
+      "strategy": "random",
+      "generator": "tvae",
+      "column_shapes": 0.9162777838482435,
+      "pair_trends": 0.9295375654465637,
+      "overall_quality": 0.9229076746474036,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.1724
+    },
+    {
+      "seed": 2026,
+      "strategy": "random",
+      "generator": "tvae",
+      "column_shapes": 0.8994075791935859,
+      "pair_trends": 0.9148823971458903,
+      "overall_quality": 0.9071449881697381,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.1929
+    },
+    {
+      "seed": 3407,
+      "strategy": "random",
+      "generator": "tvae",
+      "column_shapes": 0.9011555779604221,
+      "pair_trends": 0.9250687361794471,
+      "overall_quality": 0.9131121570699345,
+      "missing_sim_mean": 0.9984527381845462,
+      "class_1_share": 0.157
+    }
+  ],
+  "multi_seed_mean_std": {
+    "('from_column', 'ctgan')": {
+      "column_shapes_mean": 0.9381,
+      "column_shapes_std": 0.0056,
+      "pair_trends_mean": 0.9571,
+      "pair_trends_std": 0.0055,
+      "overall_quality_mean": 0.9476,
+      "overall_quality_std": 0.0047,
+      "missing_sim_mean_mean": 0.9586,
+      "missing_sim_mean_std": 0.0098,
+      "class_1_share_mean": 0.1681,
+      "class_1_share_std": 0.0307
+    },
+    "('from_column', 'tvae')": {
+      "column_shapes_mean": 0.9263,
+      "column_shapes_std": 0.0088,
+      "pair_trends_mean": 0.9367,
+      "pair_trends_std": 0.0238,
+      "overall_quality_mean": 0.9315,
+      "overall_quality_std": 0.0154,
+      "missing_sim_mean_mean": 0.9577,
+      "missing_sim_mean_std": 0.0238,
+      "class_1_share_mean": 0.1816,
+      "class_1_share_std": 0.0202
+    },
+    "('random', 'ctgan')": {
+      "column_shapes_mean": 0.9276,
+      "column_shapes_std": 0.006,
+      "pair_trends_mean": 0.9598,
+      "pair_trends_std": 0.0044,
+      "overall_quality_mean": 0.9437,
+      "overall_quality_std": 0.004,
+      "missing_sim_mean_mean": 0.9985,
+      "missing_sim_mean_std": 0.0,
+      "class_1_share_mean": 0.176,
+      "class_1_share_std": 0.0001
+    },
+    "('random', 'tvae')": {
+      "column_shapes_mean": 0.9077,
+      "column_shapes_std": 0.0087,
+      "pair_trends_mean": 0.9242,
+      "pair_trends_std": 0.0065,
+      "overall_quality_mean": 0.916,
+      "overall_quality_std": 0.0072,
+      "missing_sim_mean_mean": 0.9985,
+      "missing_sim_mean_std": 0.0,
+      "class_1_share_mean": 0.1697,
+      "class_1_share_std": 0.0171
+    }
+  },
+  "original_no_target_baseline_seed_42": [
+    {
+      "seed": 42,
+      "generator": "ctgan",
+      "column_shapes": 0.8942,
+      "pair_trends": 0.9394,
+      "overall_quality": 0.9168,
+      "missing_sim_mean": 0.9985
+    },
+    {
+      "seed": 42,
+      "generator": "tvae",
+      "column_shapes": 0.8643,
+      "pair_trends": 0.9338,
+      "overall_quality": 0.899,
+      "missing_sim_mean": 0.9985
+    }
+  ]
+}

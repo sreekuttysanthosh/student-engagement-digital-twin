@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-11-07T06:43:39.271998+00:00",
+  "status": "pilot_completed",
+  "generator": {
+    "name": "RealTabFormer",
+    "version": "0.2.4",
+    "transformers_version": "4.57.6",
+    "datasets_version": "4.4.1",
+    "model_type": "tabular",
+    "device": "cpu",
+    "seed": 42,
+    "epochs_requested": 10,
+    "max_steps": 300,
+    "rows_used_for_fit": 21328,
+    "rows_sampled": 5000,
+    "strategy": "random"
+  },
+  "fidelity_vs_real_train": {
+    "column_shapes": 0.8657791469437617,
+    "pair_trends": 0.9465551979829304,
+    "overall_quality": 0.906167172463346,
+    "pair_trends_per_pair": {
+      "nevents|ndays_act": 0.9720325945667843,
+      "nevents|ncontent": 0.8849170056791079,
+      "nevents|nforum_posts": 0.9452809754656866,
+      "ndays_act|ncontent": 0.956919686077244,
+      "ndays_act|nforum_posts": 0.998385023162127,
+      "ncontent|nforum_posts": 0.9217959029466324
+    },
+    "missing_value_similarity": {
+      "nevents": 0.9960083270817705,
+      "ndays_act": 0.9974924231057765,
+      "ncontent": 1.0,
+      "nforum_posts": 0.9909234808702176
+    }
+  },
+  "synthetic_class_share": {
+    "0": 0.8244,
+    "1": 0.1756
+  },
+  "classification_on_real_test": {
+    "weighted": {
+      "precision": 0.893259648573782,
+      "recall": 0.8957434839677479,
+      "f1": 0.8943207623954499
+    },
+    "per_class": {
+      "0": {
+        "precision": 0.9307174887892377,
+        "recall": 0.9438381082310141,
+        "f1-score": 0.9372318807857304,
+        "support": 4398.0
+      },
+      "1": {
+        "precision": 0.7170675830469645,
+        "recall": 0.6695187165775401,
+        "f1-score": 0.6924778761061947,
+        "support": 935.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4151,
+        247
+      ],
+      [
+        309,
+        626
+      ]
+    ]
+  },
+  "outputs": {
+    "synthetic_csv": "artifacts\\realtabformer\\pilot_random_seed_42_restored.csv",
+    "generator_model": "artifacts\\realtabformer\\pilot_random_seed_42\\realtabformer",
+    "classifier_model": "artifacts\\realtabformer\\pilot_random_seed_42\\xgb_realtabformer_pilot.joblib"
+  },
+  "limitations": [
+    "Exploratory pilot, not a paper-scale replication: training was capped at 300 steps.",
+    "Only the random missingness strategy was run.",
+    "The 5,000-row sample is smaller than the 21,328-row real training set.",
+    "This is a single-seed result and should not support model-winner claims."
+  ]
+}

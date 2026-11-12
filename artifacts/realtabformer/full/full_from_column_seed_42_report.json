@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-11-08T05:57:48.241583+00:00",
+  "status": "generation_completed",
+  "generator": "RealTabFormer",
+  "strategy": "from_column",
+  "seed": 42,
+  "device": "cpu",
+  "epochs_requested": 10,
+  "max_steps": 6600,
+  "training_rows": 21328,
+  "generated_rows": 21328,
+  "restored_rows": 21328,
+  "columns": [
+    "nevents",
+    "ndays_act",
+    "ncontent",
+    "nforum_posts",
+    "Engagement_Level"
+  ],
+  "missing_values": {
+    "nevents": 3703,
+    "ndays_act": 2454,
+    "ncontent": 0,
+    "nforum_posts": 15054
+  },
+  "class_distribution": {
+    "0": 0.8401631657914479,
+    "1": 0.15983683420855213
+  },
+  "synthetic_csv": "artifacts\\realtabformer\\full\\full_from_column_seed_42_restored.csv",
+  "generator_model": "artifacts\\realtabformer\\full\\full_from_column_seed_42\\realtabformer"
+}

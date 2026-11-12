@@ -1,0 +1,18 @@
+seed: 42
+raw_path: data/raw/CNPC_1401-1509_DI_v1_1_2016-03-01.tab
+processed_dir: data/processed
+results_dir: results        # legacy key, kept so notebook 01 still works
+reports_dir: reports
+artifacts_dir: artifacts
+target_threshold: 0.5       # completed_% is on a 0-1 scale in this file
+test_size: 0.2
+features: [nevents, ndays_act, ncontent, nforum_posts]
+target: Engagement_Level
+imputer_k: 5
+generators:
+  epochs: 300
+xgboost:
+  n_estimators: 200
+  max_depth: 4
+  learning_rate: 0.1
+  eval_metric: logloss
